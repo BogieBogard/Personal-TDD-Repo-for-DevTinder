@@ -2,12 +2,16 @@ import React from "react";
 import "./main.css";
 import devImage1 from "../../img/pic01.jpg";
 import customerImage1 from "../../img/pic02.jpg";
-
+import matthew2 from "../../img/matthew2.jpg";
+import ricardo from "../../img/ricardo.png";
+import juan from "../../img/juan.jpg";
+import patrick from "../../img/patrick.jpg";
+import nlouda from "../../img/nlouda.jpeg";
 const WelcomeToDevTinder = () => (
   <div>
     {/* Header - Welcome to the app section */}
     <section id="banner">
-      <div class="inner">
+      <div className="inner">
         <header>
           <h1>DevTinder</h1>
           <p>
@@ -18,28 +22,28 @@ const WelcomeToDevTinder = () => (
           </p>
           <p>Who are you??</p>
         </header>
-        <a href="#developer" class="button big scrolly">
+        <a href="#developer" className="button big scrolly">
           A DEVELOPER
         </a>{" "}
         |{" "}
-        <a href="#customer" class="button big scrolly">
+        <a href="#customer" className="button big scrolly">
           A CUSTOMER
         </a>
       </div>
     </section>
 
     {/* As a Developer */}
-    <section class="wrapper style1">
-      <div class="inner">
+    <section className="wrapper style1">
+      <div className="inner">
         {/* <!-- 2 Columns --> */}
-        <div class="flex flex-2">
-          <div class="mol col1">
-            <div class="image round fit">
+        <div className="flex flex-2">
+          <div className="mol col1">
+            <div className="image round fit">
               <img src={devImage1} alt="" />
             </div>
           </div>
           {/* {{!-- Custom Mol conflicting with Col from jquery --}} */}
-          <div class="mol col2">
+          <div className="mol col2">
             <h3>As a developer...</h3>
             <p>
               It is important to keep your skills fine tuned, and what better
@@ -54,7 +58,7 @@ const WelcomeToDevTinder = () => (
               start building your resume, honing your skills, and making some
               money on the side!
             </p>
-            <a href="/developerlogin" class="button">
+            <a href="/developerlogin" className="button">
               Start as a developer
             </a>
           </div>
@@ -63,10 +67,10 @@ const WelcomeToDevTinder = () => (
     </section>
 
     {/* As a Customer */}
-    <section class="wrapper style2">
-      <div class="inner">
-        <div class="flex flex-2">
-          <div class="mol col2">
+    <section className="wrapper style2">
+      <div className="inner">
+        <div className="flex flex-2">
+          <div className="mol col2">
             <h3>As a customer...</h3>
             <p>
               Your needs and standards are important to us. Thats why here at
@@ -84,13 +88,13 @@ const WelcomeToDevTinder = () => (
               in the right place! Create a profile and match with a developer
               who will bring your project to life!
             </p>
-            <a href="/customerlogin" class="button">
+            <a href="/customerlogin" className="button">
               Start as a customer..
             </a>
           </div>
           {/* Custom Mol conflicting with Col from jquery */}
-          <div class="mol col1 first">
-            <div class="image round fit">
+          <div className="mol col1 first">
+            <div className="image round fit">
               <img src={customerImage1} alt="" />
             </div>
           </div>
@@ -99,61 +103,76 @@ const WelcomeToDevTinder = () => (
     </section>
 
     {/* Footer */}
-    <div class="col align-center">
-      <div class="image round fit">
-        <img src="/assets/img/juan.jpg" alt="" />
+    <div className="row">
+      <div className="col align-center">
+        <div className="image round fit">
+          <img src={matthew2} alt="" />
+        </div>
+        <p>Matthew Bogard</p>
+        <p>
+          Full-Stack Developer responsible for rewriting the framework of the application with React.js.
+        </p>
+        <a href="https://github.com/BogieBogard" className="button">
+          <i className="fab fa-github" /> Learn More
+        </a>
       </div>
-      <p>Juan Varon</p>
-      <p>
-        Full-Stack Developer responsible for web security, user authentication
-        and browser security.
-      </p>
-      <a href="https://github.com/juan-camilo11" class="button">
-        <i class="fab fa-github" /> Learn More
-      </a>
-    </div>
-    <div class="col align-center">
-      <div class="image round fit">
-        <img src="/assets/img/juan.jpg" alt="" />
+      <div className="col align-center">
+        <div className="image round fit">
+          <img src={juan} alt="" />
+        </div>
+        <p>Juan Varon</p>
+        <p>
+          Full-Stack Developer responsible for web security, user authentication
+          and browser security.
+        </p>
+        <a href="https://github.com/juan-camilo11" className="button">
+          <i className="fab fa-github" /> Learn More
+        </a>
       </div>
-      <p>Juan Varon</p>
-      <p>
-        Full-Stack Developer responsible for web security, user authentication
-        and browser security.
-      </p>
-      <a href="https://github.com/juan-camilo11" class="button">
-        <i class="fab fa-github" /> Learn More
-      </a>
-    </div>
 
-    <div class="col align-center">
-      <div class="image round fit">
-        <img src="/assets/img/patrick.jpg" alt="" />
+      <div className="col align-center">
+        <div className="image round fit">
+          <img src={patrick} alt="" />
+        </div>
+        <p>Patrick Wang</p>
+        <p>
+          Full-Stack Developer responsible for UI/UX and web page structure
+          development.
+        </p>
+        <a href="https://github.com/paichunwang" className="button">
+          {" "}
+          <i className="fab fa-github" />
+          Learn More
+        </a>
       </div>
-      <p>Patrick Wang</p>
-      <p>
-        Full-Stack Developer responsible for UI and web page structure
-        development.
-      </p>
-      <a href="https://github.com/paichunwang" class="button">
-        {" "}
-        <i class="fab fa-github" />
-        Learn More
-      </a>
-    </div>
 
-    <div class="col align-center">
-      <div class="image round fit">
-        <img src="/assets/img/ricardo.png" alt="" />
+      <div className="col align-center">
+        <div className="image round fit">
+          <img src={ricardo} alt="" />
+        </div>
+        <p>Ricardo Bentin</p>
+        <p>
+          Full-Stack Developer responsible for project flow and structure
+          development.
+        </p>
+        <a href="https://github.com/ricardobentin" className="button">
+          <i className="fab fa-github" /> Learn More
+        </a>
       </div>
-      <p>Ricardo Bentin</p>
-      <p>
-        Full-Stack Developer responsible for project flow and structure
-        development.
-      </p>
-      <a href="https://github.com/ricardobentin" class="button">
-        <i class="fab fa-github" /> Learn More
-      </a>
+
+      <div className="col align-center">
+        <div className="image round fit">
+          <img src={nlouda} alt="" />
+        </div>
+        <p>Nancy Louda</p>
+        <p>
+          Full-Stack Developer responsible for front-end style and back-end logic contributions.
+        </p>
+        <a href="https://github.com/nlouda" className="button">
+          <i className="fab fa-github" /> Learn More
+        </a>
+      </div>
+
     </div>
   </div>
 );
