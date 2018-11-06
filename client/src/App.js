@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
-import WelcomeToDevTinder from "./components/HomePage/WelcomeToDevTinder";
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
 
 const App = () => (
   <div>
-    <Navbar />
-    <WelcomeToDevTinder />
+    <Main />
   </div>
 );
 

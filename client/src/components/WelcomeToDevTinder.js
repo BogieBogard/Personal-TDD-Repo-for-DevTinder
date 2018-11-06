@@ -1,36 +1,56 @@
 import React from "react";
+import { Link } from "react-router-dom";
+//import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import DeveloperPage from "./DeveloperPage";
+import CustomerPage from "./CustomerPage";
 import "./main.css";
-import devImage1 from "../../img/pic01.jpg";
-import customerImage1 from "../../img/pic02.jpg";
-import matthew2 from "../../img/matthew2.jpg";
-import ricardo from "../../img/ricardo.png";
-import juan from "../../img/juan.jpg";
-import patrick from "../../img/patrick.jpg";
-import nlouda from "../../img/nlouda.jpeg";
+import devImage1 from "../img/pic01.jpg";
+import customerImage1 from "../img/pic02.jpg";
+import matthew2 from "../img/matthew2.jpg";
+import ricardo from "../img/ricardo.png";
+import juan from "../img/juan.jpg";
+import patrick from "../img/patrick.jpg";
+import nlouda from "../img/nlouda.jpeg";
+
 const WelcomeToDevTinder = () => (
   <div>
-    {/* Header - Welcome to the app section */}
-    <section id="banner">
-      <div className="inner">
-        <header>
-          <h1>DevTinder</h1>
-          <p>
-            Platform to connect customers who need dev support on a project
-            <br />
-            to developers who can work on their projects based on their
-            expertise
-          </p>
-          <p>Who are you??</p>
-        </header>
-        <a href="#developer" className="button big scrolly">
-          A DEVELOPER
-        </a>{" "}
-        |{" "}
-        <a href="#customer" className="button big scrolly">
-          A CUSTOMER
-        </a>
-      </div>
-    </section>
+    {/* <Router> */}
+    <div>
+      {/* Header - Welcome to the app section */}
+      <header id="header" class="alt">
+        <div class="logo">
+          <a href="/">
+            DevTinder{" "}
+            <span>
+              by Ricardo Bentin, Juan Varon, Patrick Wang, Matthew Bogard, and
+              Nancy Louda
+            </span>
+          </a>
+        </div>
+      </header>
+      <section id="banner">
+        <div className="inner">
+          <header>
+            <h1>DevTinder</h1>
+            <p>
+              Platform to connect customers who need dev support on a project
+              <br />
+              to developers who can work on their projects based on their
+              expertise
+            </p>
+            <p>Who are you??</p>
+          </header>
+          <Link to="/developer">
+            <a className="button big scrolly">A DEVELOPER</a>
+            {"  "}{" "}
+          </Link>
+          <Link to="/customer">
+            <a className="button big scrolly">A CUSTOMER</a>
+          </Link>
+        </div>
+      </section>
+    </div>
+    {/* </Router> */}
 
     {/* As a Developer */}
     <section className="wrapper style1">
@@ -110,7 +130,8 @@ const WelcomeToDevTinder = () => (
         </div>
         <p>Matthew Bogard</p>
         <p>
-          Full-Stack Developer responsible for rewriting the framework of the application with React.js.
+          Full-Stack Developer responsible for rewriting the framework of the
+          application with React.js.
         </p>
         <a href="https://github.com/BogieBogard" className="button">
           <i className="fab fa-github" /> Learn More
@@ -166,13 +187,13 @@ const WelcomeToDevTinder = () => (
         </div>
         <p>Nancy Louda</p>
         <p>
-          Full-Stack Developer responsible for front-end style and back-end logic contributions.
+          Full-Stack Developer responsible for front-end style and back-end
+          logic contributions.
         </p>
         <a href="https://github.com/nlouda" className="button">
           <i className="fab fa-github" /> Learn More
         </a>
       </div>
-
     </div>
   </div>
 );

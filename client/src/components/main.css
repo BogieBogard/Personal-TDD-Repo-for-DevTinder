@@ -3688,7 +3688,8 @@ body.subpage {
   right: 0;
   text-align: right;
   top: 0;
-  vertical-align: middle;
+  /* MB - commenting out the property below because of of error--can't be displayed */
+  /* vertical-align: middle; */
   width: 7em;
 }
 
@@ -3751,7 +3752,7 @@ body.subpage {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: url("../../img/banner.jpg");
+  background-image: url("../img/banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
