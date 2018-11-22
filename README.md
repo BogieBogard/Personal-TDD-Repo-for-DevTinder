@@ -11,5 +11,3 @@ Please see our presentation below for more information on our project!
 ![](./DevTinder-PPT/DevTinder-PPT-(Read-Only)-09.png)
 ![](./DevTinder-PPT/DevTinder-PPT-(Read-Only)-10.png)
 ![](./DevTinder-PPT/DevTinder-PPT-(Read-Only)-11.png)
-![](./DevTinder-PPT/DevTinder-PPT-(Read-Only)-12.png)
-![](./DevTinder-PPT/DevTinder-PPT-(Read-Only)-13.png)
